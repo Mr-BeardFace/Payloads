@@ -18,12 +18,15 @@ Takes the basic idea from above and applies it to a macro. I haven't figured out
 
 ### Tools
 [SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)
+
 A payload creation framework for the retrieval and execution of arbitrary CSharp source code. It leverages James Forshaw's DotNetToJavaScript tool to invoke methods from the SharpShooter DotNet serialised object.
 
 [GreatSCT](https://github.com/GreatSCT/GreatSCT)
+
 A tool designed to generate metasploit payloads that bypass common anti-virus solutions and application whitelisting solutions.
 
 [Magic Unicorn](https://github.com/trustedsec/unicorn)
+
 A simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18.
 
 ### Articles
