@@ -1,6 +1,6 @@
 # AV Safe Payloads
 
-Various payloads that can bypass different Antiviruses. Most of my focus is bypassing Windows Defender due to it's newer implementations and it being widespread, but as such they can bypass most newer Antivuses. None of my ideas I would consider "new". I've taken different methods from people much smarter than me and tailored them for me. Please take a look at the credits below on the different tools and posts I've used.
+Various payloads that can bypass different Antiviruses. Most of my focus is bypassing Windows Defender due to it's newer implementations and it being widespread, but as such they can bypass most newer Antivuses. I wouldn't consider any of my ideas "new". I've taken different methods from people much smarter than me and tailored them to what I want/need. Please take a look at the credits below on the different tools, articles, videos I've used.
 
 ## Payloads
 
