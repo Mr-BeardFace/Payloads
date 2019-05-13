@@ -34,5 +34,9 @@ https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/
 
 https://www.microsoft.com/security/blog/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/
 
+https://support.microsoft.com/en-us/help/304655/how-to-programmatically-compile-code-using-c-compiler
+
+
+
 ### Videos
 https://www.youtube.com/watch?v=MHc3XP3XC4I
