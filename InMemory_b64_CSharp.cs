@@ -56,13 +56,9 @@ namespace DynaCode
             }
     
             Assembly assem = compile.CompiledAssembly;
-    
-            Type mt = assem.GetType("ConnectBack.Program");
-            
+            Type mt = assem.GetType("ConnectBack.Program");     
             var methInfo = mt.GetMethod("Main");
-    
             var o = Activator.CreateInstance(mt);
-            
             var result = methInfo.Invoke(o, null);
             
         }
