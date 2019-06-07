@@ -12,7 +12,7 @@ namespace DynaCode
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string coded = "####Insert Base64 Encoded CSharp Script####";
     
