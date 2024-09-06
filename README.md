@@ -35,6 +35,10 @@ A tool designed to generate metasploit payloads that bypass common anti-virus so
 
 A simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18.
 
+[Hades](https://github.com/f1zm0/hades)
+
+The primary basepoint for my GoLang wrapper.
+
 ### Articles
 https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/
 
