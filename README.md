@@ -4,7 +4,7 @@ Various payloads that can bypass different Antiviruses. Most of my focus is bypa
 
 ## Payloads
 #### GoLang_Wrapper
-Very basic wrapper in GoLang that uses standard API calls, VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject, to execute a shellcode. As of September 2024, can bypass Crowdstrike and Defener along with certain aspects Falcon Complete and MDE. 
+Very basic wrapper in GoLang that uses standard API calls, VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject, to execute a shellcode. As of September 2024, can bypass Crowdstrike and Defener along with certain aspects Falcon Complete and MDE. Can use obfuscate.py to encode a shellcode for better obfuscation. 
 
 #### InMemory_b64_CSharp.cs
 
