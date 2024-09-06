@@ -9,11 +9,13 @@ Various payloads that can bypass different Antiviruses. Most of my focus is bypa
 Is meant to be compiled and ran on target. Will compile a base64 encoded CSharp payload (line 17) and execute the newly compiled code in memory. I like using the [CSharp Reverse Shell](https://gist.github.com/fdiskyou/56b9a4482eecd8e31a1d72b1acb66fac) but it should work with whatever CSharp script you decide to use.
 
 Why base64 Encode the payload? Well the ultimate goal is to have an encrypted string and have the original exe pull down a decryption key. If for some reason the exe is discovered, only the code that is decrypting a string would be seen and not the portion of the code that is calling back to covert infrastructure. See below in Credits on why this is beneficial.
+
 **This likely doesn't work anymore, but leaving for learning sake
 
 #### Bad_Macro.txt
 
 Takes the basic idea from above and applies it to a macro. I haven't figured out how to compile and execute the code in memory with VBA yet, so this uses a base64 encoded exe and will write it to disk in the %temp% directory. Honestly, I'm surprised this works at all. Again, this was tested positively with Windows Defender. Other AVs, however, flag it because word or excel docs are spawning unrelated/suspicious processes. I know there are ways around that, just haven't messed with it enough yet.
+
 **This likely doesn't work anymore, but leaving for learning sake
 
 ## Credits
