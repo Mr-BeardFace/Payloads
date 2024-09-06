@@ -3,6 +3,8 @@
 Various payloads that can bypass different Antiviruses. Most of my focus is bypassing Windows Defender due to it's newer implementations and it being widespread, but as such they can bypass most newer Antivuses. I wouldn't consider any of my ideas "new". I've taken different methods from people much smarter than me and tailored them to what I want/need. Please take a look at the credits below on the different tools, articles, videos I've used.
 
 ## Payloads
+#### GoLang_Wrapper
+Very basic wrapper in GoLang that uses standard API calls, VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject, to execute a shellcode. As of September 2024, can bypass Crowdstrike and Defener along with certain aspects Falcon Complete and MDE. 
 
 #### InMemory_b64_CSharp.cs
 
