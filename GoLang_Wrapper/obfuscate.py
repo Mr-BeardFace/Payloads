@@ -1,6 +1,7 @@
 import binascii
-## Cobalt Strike payload... ensure to append string with 'b' to indicate binary
-buf = input("Cobalt Strike created stager: ").replace('\\x','')
+## Input the shellcode you want to encode. Can be any type (CS, msfvenom, etc) as long as it
+## is a hex string. Will perform a Caesar Cipher and XOR with DD and output for C# and GoLang wrapper 
+buf = input("Shellcode to encode: ").replace('\\x','')
 buf = bytearray.fromhex(buf)
 
 encoded = bytearray(len(buf))
